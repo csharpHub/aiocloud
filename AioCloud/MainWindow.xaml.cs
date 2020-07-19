@@ -89,7 +89,10 @@ namespace AioCloud
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
         {
             // 加载配置
-            Global.Load();
+            if (!Global.Load())
+            {
+                // 暂时为空
+            }
 
             // 更新状态
             this.UpdateStatus();

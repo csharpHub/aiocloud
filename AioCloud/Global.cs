@@ -27,7 +27,7 @@ namespace AioCloud
         /// <summary>
         ///     加载配置
         /// </summary>
-        public static void Load()
+        public static bool Load()
         {
             // 设置当前目录
             Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
@@ -81,7 +81,12 @@ namespace AioCloud
             Utils.i18N.Load();
 
             // 加载 Netfilter
-            Utils.Netfilter.Load();
+            if (!Utils.Netfilter.Load())
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
