@@ -1,0 +1,11 @@
+{
+    "Status": "状态",
+    ": ": "：",
+
+    "Waiting": "等待中",
+    "Starting": "启动中",
+    "Started": "已启动",
+    "Stopping": "停止中",
+    "Stopped": "已停止",
+    "Terminating": "退出中"
+}
