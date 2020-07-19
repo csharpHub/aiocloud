@@ -77,7 +77,11 @@ namespace AioCloud
                 List = new List<Model.Game>();
             }
 
+            // 加载 i18N
             Utils.i18N.Load();
+
+            // 加载 Netfilter
+            Utils.Netfilter.Load();
         }
 
         /// <summary>

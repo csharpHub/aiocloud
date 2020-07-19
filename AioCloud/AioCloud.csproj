@@ -124,6 +124,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
@@ -152,7 +153,7 @@
     </Compile>
     <Compile Include="Utils\Bandwidth.cs" />
     <Compile Include="Utils\i18N.cs" />
-    <Compile Include="Utils\nfapinet.cs" />
+    <Compile Include="Utils\Netfilter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.cs" />
