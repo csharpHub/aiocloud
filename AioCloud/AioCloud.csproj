@@ -152,6 +152,7 @@
     </Compile>
     <Compile Include="Utils\Bandwidth.cs" />
     <Compile Include="Utils\i18N.cs" />
+    <Compile Include="Utils\nfapinet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.cs" />
