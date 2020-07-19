@@ -65,13 +65,7 @@ namespace AioCloud
         /// <param name="message">自定义状态信息</param>
         public void UpdateStatus(params string[] message)
         {
-            var sb = new StringBuilder();
-            for (int i = 0; i < message.Length; i++)
-            {
-                sb.Append(Utils.i18N.Get(message[i]));
-            }
-
-            this.StatusLabel.Content = String.Format("{0}{1}{2}", Utils.i18N.Get("Status"), Utils.i18N.Get(": "), sb.ToString());
+            this.UpdateStatus(Utils.i18N.Get(message));
         }
 
         /// <summary>
