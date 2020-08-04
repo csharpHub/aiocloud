@@ -151,6 +151,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NativeMethods.cs" />
     <Compile Include="Utils\Bandwidth.cs" />
     <Compile Include="Utils\i18N.cs" />
     <Compile Include="Utils\Netfilter.cs" />
