@@ -6,15 +6,18 @@ namespace AioCloud
     {
         public enum NameList : int
         {
-            TYPE_TCPHost,
-            TYPE_TCPPort,
-            TYPE_TCPPass,
-            TYPE_TCPMeth,
+            TYPE_TCPHOST,
+            TYPE_TCPPORT,
+            TYPE_TCPPASS,
+            TYPE_TCPCIPH,
 
-            TYPE_UDPHost,
-            TYPE_UDPPort,
-            TYPE_UDPPass,
-            TYPE_UDPMeth
+            TYPE_UDPHOST,
+            TYPE_UDPPORT,
+            TYPE_UDPPASS,
+            TYPE_UDPCIPH,
+
+            TYPE_ADDNAME,
+            TYPE_CLRNAME
         }
 
         [DllImport("Redirector.bin", CallingConvention = CallingConvention.Cdecl)]
