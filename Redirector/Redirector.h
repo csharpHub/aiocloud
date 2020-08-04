@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 	DLLEXPORT BOOL aio_init();
-	DLLEXPORT BOOL aio_dial(LPCSTR name, LPCSTR value);
+	DLLEXPORT BOOL aio_dial(int name, LPSTR value);
 	DLLEXPORT BOOL aio_load();
 	DLLEXPORT BOOL aio_free();
 #ifdef __cplusplus

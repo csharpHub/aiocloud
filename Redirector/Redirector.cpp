@@ -25,39 +25,32 @@ extern "C"
         return TRUE;
     }
 
-    DLLEXPORT BOOL aio_dial(int name, LPCSTR value)
+    DLLEXPORT BOOL aio_dial(int name, LPSTR value)
     {
         switch (name)
         {
         case TYPE_TCPHost:
-            break;
         case TYPE_TCPPort:
-            break;
         case TYPE_TCPPass:
-            break;
         case TYPE_TCPMeth:
-            break;
         case TYPE_UDPHost:
-            break;
         case TYPE_UDPPort:
-            break;
         case TYPE_UDPPass:
-            break;
         case TYPE_UDPMeth:
-            break;
+            return TRUE;
         default:
-            break;
+            return FALSE;
         }
     }
 
     DLLEXPORT BOOL aio_load()
     {
-
+        return TRUE;
     }
 
     DLLEXPORT BOOL aio_free()
     {
-
+        return TRUE;
     }
 #ifdef __cplusplus
 }
