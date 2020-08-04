@@ -29,14 +29,16 @@ extern "C"
     {
         switch (name)
         {
-        case TYPE_TCPHost:
-        case TYPE_TCPPort:
-        case TYPE_TCPPass:
-        case TYPE_TCPMeth:
-        case TYPE_UDPHost:
-        case TYPE_UDPPort:
-        case TYPE_UDPPass:
-        case TYPE_UDPMeth:
+        case TYPE_TCPHOST:
+        case TYPE_TCPPORT:
+        case TYPE_TCPPASS:
+        case TYPE_TCPCIPH:
+        case TYPE_UDPHOST:
+        case TYPE_UDPPORT:
+        case TYPE_UDPPASS:
+        case TYPE_UDPCIPH:
+        case TYPE_ADDNAME:
+        case TYPE_CLRNAME:
             return TRUE;
         default:
             return FALSE;
